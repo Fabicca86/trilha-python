@@ -1,5 +1,5 @@
 #App bancário nível 1
-#menu das opções que serão exibidas para o usuário tnteragir
+#menu das opções que serão exibidas para o usuário interagir
 menu = """
 
 [1] Depositar
@@ -47,7 +47,7 @@ while True: #Enquanto tudo for verdade executa:
         elif excedeu_saques:
             print("Operação falhou! Limite de saques excedidos.\n")
 
-        elif valor > 0:                         #Caso não tenha excedido nada... Esta linha de código vem depois pois primero verificamos se não há nenhuma restraição para liberar $$
+        elif valor > 0:     #Caso não tenha excedido nada... Esta linha de código vem depois pois primero verificamos se não há nenhuma restrição para liberar $
             saldo -= valor                      # o valor solicitado vai decrementar o saldo
             extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1 #o Contador de saque vai aumentar em 1 a cada iteração
