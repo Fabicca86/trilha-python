@@ -9,6 +9,7 @@ menu = """
 
 => """
 
+
 saldo = 0 #No nosso caso saldo sempre inicia com zero
 limite = 500 #Limite de retirada por operação
 extrato = "" #string iteravel que inicia vazia, serve depois para nossa condicional no extrato.
@@ -22,7 +23,7 @@ while True: #Enquanto tudo for verdade executa:
     if opcao == "1":
         valor = float(input("Informe o valor que deseja depositar: \n"))
 
-        if valor > 0:                                                   #Se o depósto é num valor maior que zero o saldo é incrementado e o extrato exibido
+        if valor > 0:   #Se o depósito é num valor maior que zero o saldo é incrementado e o extrato exibido
             saldo += valor
             extrato += f"Depósito: R$ {valor:.2f}\n" #Retorna só até 2 casas decimais ex 1.99
 
@@ -72,3 +73,12 @@ while True: #Enquanto tudo for verdade executa:
     else: # se digitar opção que não as enumeradas
 
         print("Operação inválida, por favor selecione novamente a operação desejada.\n") 
+
+
+# 26/06/24 app bancáro nível 2 - implementando funções
+def menu():
+    
+def depositar():
+def sacar():
+def extrato():
+def sair():
